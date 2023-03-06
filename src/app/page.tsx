@@ -1,91 +1,34 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="flex justify-center h-full flex-col relative px-12">
+      {/* <div className="text-[10rem] font-sans leading-tight text-[#8F8CA8] font-[900] opacity-5">
+        <h1>I Build</h1>
+        <h1>Websites</h1>
+      </div> */}
+      <div className="z-[2] flex text-[#8F8CA8] justify-between items-center">
+        <div className="">
+          <h1 className="text-7xl font-[800] mb-2">Luis Carlos</h1>
+          <h6 className="w-max text-5xl font-[300] mb-12 relative">
+            Full Stack Web Developer
+          </h6>
 
-      <div className={styles.center}>
+          <button className="px-5 py-2 border-2 rounded-md font-[700] hover:bg-[#1f1d2e] hover:text-[#c4a7e7]">
+            View Work
+          </button>
+          <button className="px-5 py-2 border-2 rounded-md font-[700] ml-4 hover:bg-[#1f1d2e] hover:text-[#c4a7e7]">
+            Contact Me
+          </button>
+        </div>
+
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src="/assets/programmer-animate.svg"
+          alt="Programmer Animate"
+          width={600}
+          height={600}
           priority
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
